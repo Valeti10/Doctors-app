@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Registration Form</title>
+    <script type="text/javascript"></script>
+
+<style>
+body {
+    background-color: lightblue;
+    background-image: url('hos3.jpg');
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+<body>
+  <div class="alert">
+    
+  </div>
+
+<form action="patiregister.php" method="post">
+
+</head>
+    <center>
+<h3>PATIENT REGISTRATION FORM</h3>
+</center>
+
+ 
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="first_name" maxlength="30" required/>
+
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="last_name" maxlength="30" required/>
+
+</td>
+</tr>
+ 
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type="date" name="date_of_birth" maxlength="30" required /></td>
+</tr>
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email_id" maxlength="100" required/></td>
+</tr>
+
+
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="mobile_number" maxlength="10" required />
+
+</td>
+</tr>
+
+<!----- Category ---------------------------------------------------------->
+<tr>
+
+  <td>CATEGORY</td>
+
+  <td><select name="category">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="Fever">Fever</option>
+
+  <option value="Bodypains">Bodypains</option>
+
+  <option value="Heart">Cardiaologist</option>
+
+  <option value="Cold">Dentist</option>
+  
+  <option value="Cold">Dermatologist</option>required
+
+  </select></td>
+
+  </tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" required/>
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+ 
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ <h1><a href ="patientlogin.html">Patient Login</a></h1>
+</body>
+</html>

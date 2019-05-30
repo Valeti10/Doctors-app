@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head>
+<title>Online Doctor Appointment Booking System</title>
+<style>
+body{
+margin:0;
+background:url('hos3.jpg');
+background-size:cover;
+}
+.nav{
+width:100%;
+background:#000033;
+height:100px;
+margin-top:100px;
+opacity:0.5;
+}
+ul{
+list-style:none;
+padding:0;
+position:absolute;
+}
+li{
+float:left;
+margin-top:30px;
+}
+a{
+width:150px;
+color:orange;
+display:block
+;
+text-decoration:none;
+font-size:20px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:Century Gothic;
+font-weight:bold;
+}
+a:hover{
+back-ground:#669900;
+transition:0.6s;
+}
+</style>
+<form action="addpatients.php" method="post">
+</head>
+<body  >
+	<center>
+	       <h1>Online Doctor Appointment Booking </h1><marquee>welcome to Online Doctor Appointment</marquee><br><br>
+
+	       <h1>Add Patients</h1>
+
+<table align="center" cellpadding = "10">
+ 
+ <!----- Patient name ---------------------------------------------------------->
+<tr>
+<td>Patient name</td>
+<td><input type="text" name="patient_name" maxlength="30" required/>
+
+</td>
+</tr>
+
+
+<!----- Category ---------------------------------------------------------->
+<tr>
+
+  <td>Category</td>
+
+  <td><select name="category">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="Fever">Fever</option>
+
+  <option value="Bodypains">Bodypains</option>
+
+  <option value="Heart">Cardiaologist</option>
+
+  <option value="Cold">Dentist</option>
+  
+  <option value="Cold">Dermatologist</option>
+
+  </select></td>
+
+  </tr>
+
+
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>Mobile number</td>
+<td>
+<input type="text" name="mobile_number" maxlength="10" required/>
+</td>
+</tr>
+
+
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>Email id</td>
+<td><input type="text" name="email_id" maxlength="100" required/>
+</td>
+</tr>
+
+
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>Address <br /><br /><br /></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+</table>
+
+<input type="submit" value="Add"/>
+<input type="reset" value="Reset">
+</form>
+<h1><a href ="register4.html"></a></h1>
+</center>
+</body>
+</html>

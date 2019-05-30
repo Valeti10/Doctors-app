@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doctor Registration Form</title>
+
+<style>
+body {
+    background-color: lightblue;
+    background-image: url('hos3.jpg');
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+
+<form action="docregister.php" method="post">
+
+
+</head>
+
+
+
+
+</html>
+
+	<center>
+<h3>DOCTOR REGISTRATION FORM</h3>
+</center>
+
+ 
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<tr>
+<td>FIRST NAME</td>
+<td><input type="text" name="first_name" maxlength="30"/>
+
+</td>
+</tr>
+ 
+<!----- Last Name ---------------------------------------------------------->
+<tr>
+<td>LAST NAME</td>
+<td><input type="text" name="last_name" maxlength="30"/>
+
+</td>
+</tr>
+ 
+<!----- Date Of Birth -------------------------------------------------------->
+<tr>
+<td>DATE OF BIRTH</td>
+<td><input type="date" name="date_of_birth" maxlength="30"/></td>
+</tr>
+ 
+<!----- Email Id ---------------------------------------------------------->
+<tr>
+<td>EMAIL ID</td>
+<td><input type="text" name="email_id" maxlength="100" /></td>
+</tr>
+<!----- Category ---------------------------------------------------------->
+<tr>
+
+  <td>Category</td>
+
+  <td><select name="category">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="Fever">Fever</option>
+
+  <option value="Bodypains">Bodypains</option>
+
+  <option value="Heart">Cardiaologist</option>
+
+  <option value="Cold">Dentist</option>
+  <option value="Cold">Dermatologist</option>
+
+  </select></td>
+
+  </tr>
+<!----- Timings ---------------------------------------------------------->
+<tr>
+<td>TIMINGS</td>
+<td><input type="time" name="timings" maxlength="100" /></td>
+</tr>
+ 
+<!----- Mobile Number ---------------------------------------------------------->
+<tr>
+<td>MOBILE NUMBER</td>
+<td>
+<input type="text" name="mobile_number" maxlength="10" />
+
+</td>
+</tr>
+ 
+<!----- Gender ----------------------------------------------------------->
+<tr>
+<td>GENDER</td>
+<td>
+Male <input type="radio" name="gender" value="Male" />
+Female <input type="radio" name="gender" value="Female" />
+</td>
+</tr>
+ 
+<!----- Address ---------------------------------------------------------->
+<tr>
+<td>ADDRESS <br /><br /><br /></td>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+ 
+<!----- City ---------------------------------------------------------->
+<tr>
+<td>CITY</td>
+<td><input type="text" name="city" maxlength="30" />
+
+</td>
+</tr>
+ 
+
+<!----- Submit and Reset ------------------------------------------------->
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Register">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+
+<h1><a href ="doctorlogin.html">Doctor Login</a></h1>
+
+ 
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+    <html>  
+    <head>  
+    <title>JavaScript form validation - checking email</title>  
+	<script type="text/javascript">
+	function check()
+	{
+	if(f1.fname.value==""||f1.lname.value==""||f1.add.value==""||f1.phno.value==""||f1.email.value=="")
+	alert("please fill all the fieds");
+	else
+	{if(checkPhone(parseInt(f1.phno.value))&&ValidateEmail(f1.email.value))
+	{document.write("Data Validated sucessfully");
+	}
+	}
+	}
+	function checkPhone(ph)
+	{
+	if(isNaN(ph))
+	{alert("Not a valid phone number");
+	return false;
+	}
+	else
+	return true;
+	}
+	function ValidateEmail(x)  
+    {  
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+	else 
+		return true;
+    }  
+	</script>  
+    </head>  
+    <body>   
+	<center>
+    <h1>Registration Form Validation</h1>  
+    <form name="f1"> 
+	Enter First Name: <input type="text" name="fname" size="30"/><br/><br/>
+	Enter Last Name: <input type="text" name="lname" size="30"/><br/><br/>
+	Enter Address: <textarea rows="4" cols="25" name="add"/></textarea><br/><br/>
+	Enter Phone Number: <input type="text" name="phno" size="30"/><br/><br/>
+	Enter Email Address:<input type='text' name="email" size="30"/><br/> <br/> 
+    <input type="button" name="submit" value="Validate" onclick="check()"/>  
+    </form>  
+    </center>
+    </body>  
+    </html>  

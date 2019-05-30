@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html><head>
+<title>Online Doctor Appointment Booking System</title>
+<style>
+body{
+margin:0;
+background:url('hos3.jpg');
+background-size:cover;
+}
+.nav{
+width:100%;
+background:#000033;
+height:100px;
+margin-top:100px;
+opacity:0.5;
+}
+ul{
+list-style:none;
+padding:0;
+position:absolute;
+}
+li{
+float:left;
+margin-top:30px;
+}
+a{
+width:150px;
+color:orange;
+display:block
+;
+text-decoration:none;
+font-size:20px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:Century Gothic;
+font-weight:bold;
+}
+a:hover{
+back-ground:#669900;
+transition:0.6s;
+}
+</style>
+<form action="booking.php" method="post">
+</head>
+<body  >
+	<center>
+	       <h1>Online Doctor Appointment Booking </h1><marquee>welcome to Online Doctor Appointment</marquee><br><br>
+	       <div class="nav">
+<ul>
+<li><a href ="home.html">Home</a></li>
+
+<li><a href ="booking.html"> Book Appointment</a></li>
+<li><a href ="viewbooking.php"> View Booking</a></li>
+<li><a href ="search.html">Search Doctor</a></li>
+<li><a href ="logout.html"> Logout</a></li>
+</ul>
+</div>
+
+	       <h1>Booking</h1>
+	       <table align="center" cellpadding = "10">
+
+          <tr>
+<td>APPOINTMENT ID</td>
+<td><input type="text" name="appointment_id" maxlength="30" required/>
+</td>
+</tr>
+
+ <tr>
+<td>DOCTOR NAME</td>
+
+   <td><select name="doctor_name">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="Avanthi">Avanthi</option>
+
+  <option value="Srinivasa Rao">Srinivasa Rao</option>
+
+  <option value="Akhila">Akhila</option>
+
+  <option value="Neelima">Neelima</option>
+
+  </select></td>
+
+  </tr>
+
+
+
+
+
+
+<tr>
+
+  <td>CATEGORY</td>
+
+  <td><select name="category">
+
+  <option value="-1" selected>select..</option>
+
+  <option value="Fever">Fever</option>
+
+  <option value="Bodypains">Bodypains</option>
+
+  <option value="Heart">Heart</option>
+
+  <option value="Cold">Cold</option>
+
+  </select></td>
+
+  </tr>
+  
+<tr>
+<td>DATE</td>
+<td><input type="date" name="date" maxlength="30" required/>
+</td>
+</tr>
+
+<!----- Timings ---------------------------------------------------------->
+<tr>
+<td>TIMINGS</td>
+<td><input type="time" name="time" maxlength="30" required/></td>
+</tr>
+
+</table>
+<input type="submit" value="Book">
+<input type="reset" value="Cancel">
+
+</form>
+</center>
+
+</body>
+</html>
